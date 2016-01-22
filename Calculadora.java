@@ -48,6 +48,7 @@ public class Calculadora
         }
         System.out.println(num1);
     }
+
     /**
      * Implementa un método llamado `sumValuesInterval` que reciba dos parámetros enteros `a` y `b` 
      * y devuelva la suma de los valores comprendidos entre dichos parámetros (ambos incluidos) y haz un commit. 
@@ -58,7 +59,7 @@ public class Calculadora
     public int sumValuesInterval(int num1, int num2 )
     {
         int cont = 0;
-        
+        int suma = 0;
         if (num1 == num2)
         {
             return (num1);
@@ -72,16 +73,44 @@ public class Calculadora
         if ( (num1 < 0) || (num2 < 0 ))
         {
             System.out.println("ERROR,uno o los dos valores son negativos");
-            
             num1= -1;
         }else
-        {while (num1+cont <=num2  )
         {
-            num1= num1 +cont;
-            cont ++;
-        }}
+            while (num1+cont <=num2 )
+            {
+                suma = (num1+cont)+suma;
+                cont ++;
+            }
+            return suma;
+        }
         return num1;
-        
-        
+    }
+
+    /**
+     * Implementa un método llamado `isPrime(int n)` que devuelva verdadero si el parámetro `n` es primo o falso en caso contrario. 
+     * Debes usar un bucle while  que divida el número entre todos los valores comprendidos entre `2` y `(n -1)`. Si alguna de estas divisiones da de resto 0,
+     * entonces el número no es primo. Se debe comprobar que el parámetro es mayor que 1; 
+     * en caso contrario se informa por pantalla del error y se devuelve `false`.
+     */
+    public boolean isPrime(int num)
+    {
+        boolean isPrime = true;
+        int cont = 2;
+        if(num < 1)
+        {
+            System.out.println("Error , el numero introducido es menor que uno");
+            isPrime = false;
+        }
+        else{
+            while( isPrime && cont <= (num -1 ))
+            {
+                if (num % cont == 0)
+                {
+                    isPrime = false;
+                }
+                cont = cont + 1;
+            }
+            }
+            return isPrime;
     }
 }
