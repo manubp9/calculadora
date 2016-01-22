@@ -124,7 +124,7 @@ public class Calculadora
         if ( n1 <0 || n2 < 0 )
         {
             System.out.println("alguno de los numeros introducidos no es positivo");
-            int solucion = -1;
+             multiplicacion = -1;
         }
         else 
         {
