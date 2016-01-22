@@ -3,18 +3,12 @@
  */
 public class Calculadora
 {
-    // instance variables - replace the example below with your own
-    private int num1;
-    private int num2;
 
     /**
      * Constructor for objects of class Calculadora
      */
     public Calculadora()
     {
-        num1 = 0;
-        num2= 0;
-
     }
 
     /**
@@ -23,8 +17,8 @@ public class Calculadora
      */
     public void multiplesOfFive()
     {
-        num1 = 10;
-        num2 = 95;
+        int num1 = 10;
+        int num2 = 95;
         while (num1 +5 < num2)
         {
             num1 = num1 +5;
@@ -38,8 +32,8 @@ public class Calculadora
      */
     public void sumValues()
     {
-        num1 = 0;
-        num2 = 10;
+        int num1 = 0;
+        int num2 = 10;
         int cont = 0;
         while (cont <= num2)
         {
@@ -110,7 +104,39 @@ public class Calculadora
                 }
                 cont = cont + 1;
             }
+        }
+        return isPrime;
+    }
+
+    /**
+     * 
+    A partir del código terminado de la actividad 0049, implementa un método para realizar multiplicaciones entre enteros positivos. 
+    Debes decidir por ti mismo qué parámetros debe recibir dicho método. El método devuelve un valor de tipo entero.
+    Se pone como condición que para realizarlo solo se pueden emplear las operaciones matemáticas suma y resta,
+    no estando permitido usar ninguna otra operación matemática. Si los parámetros no son enteros positivos el método deben devolver -1 e informar por pantalla del error.
+    Haz un commit.
+    Implementa ahora un método para realizar divisiones entre enteros positivos. Debes decidir por ti mismo qué parámetros debe recibir dicho método.
+    El método devuelve un valor de tipo entero. Se pone como condición que para realizarlo solo se pueden emplear las operaciones matemáticas suma y resta, no estando permitido usar ninguna otra operación matemática. Si los parámetros no son enteros positivos el método deben devolver -1 e informar por pantalla del error.
+     */
+    public int multiplicar(int n1 ,int n2)
+    {
+         int multiplicacion = 0;
+        if ( n1 <0 || n2 < 0 )
+        {
+            System.out.println("alguno de los numeros introducidos no es positivo");
+            int solucion = -1;
+        }
+        else 
+        {
+            
+
+            for (int x=0;x<n2;x++){
+                multiplicacion=multiplicacion+n1;
+
             }
-            return isPrime;
+
+        
+        }
+        return multiplicacion;
     }
 }
