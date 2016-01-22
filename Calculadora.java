@@ -59,7 +59,7 @@ public class Calculadora
     public int sumValuesInterval(int num1, int num2 )
     {
         int cont = 0;
-        int suma = 0;
+        int suma = 0;//variable local que va representar la suma entre num1+contador + la propia suma
         if (num1 == num2)
         {
             return (num1);
@@ -94,9 +94,9 @@ public class Calculadora
      */
     public boolean isPrime(int num)
     {
-        boolean isPrime = true;
-        int cont = 2;
-        if(num < 1)
+        boolean isPrime = true;//variable local
+        int cont = 2;//variable local que inicia en 2
+        if(num <= 1)
         {
             System.out.println("Error , el numero introducido es menor que uno");
             isPrime = false;
