@@ -1,10 +1,8 @@
 #BlueJ class context
 comment0.params=
-comment0.target=test2()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ test2\r\n
+comment0.target=void\ testSumValuesInterval()
+comment0.text=\r\n\ comprueba\ la\ suma\ de\ los\ intervalos\ entre\ dos\ numeros,\ 6\ veces\ con\ parametros\ diferentes\ \ y\ acaba\ indicando\ si\ el\ metodo\ funciona\ o\ no\r\n
 comment1.params=
-comment1.target=void\ testSumValuesInterval()
-comment1.text=\r\n\ comprueba\ que\ el\ metodo\ funciona\ con\ 6\ parametros\ diferentes\r\n
-comment2.params=
-comment2.target=void\ testIsPrime()
-numComments=3
+comment1.target=void\ testIsPrime()
+comment1.text=\r\nComprueba\ si\ los\ 6\ numeros\ a\ comprobar\ \ \ son\ primos\ y\ indica\ si\ el\ metodo\ funciona\ o\ no\ \r\n
+numComments=2

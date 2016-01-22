@@ -1,26 +1,11 @@
 
 /**
- * Write a description of class test2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ *comprueba como funciona los metodos de la clase calculadora
  */
 public class test2
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
-     * Constructor for objects of class test2
-     */
-    public test2()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * comprueba que el metodo funciona con 6 parametros diferentes
+     * comprueba la suma de los intervalos entre dos numeros, 6 veces con parametros diferentes  y acaba indicando si el metodo funciona o no
      */
     public void testSumValuesInterval()
     {
@@ -91,6 +76,10 @@ public class test2
         }
     }
 
+    
+    /**
+     *Comprueba si los 6 numeros a comprobar   son primos y indica si el metodo funciona o no 
+     */
     public void testIsPrime()
     {
         Calculadora calculad1 = new Calculadora(); 
